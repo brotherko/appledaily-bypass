@@ -1,0 +1,15 @@
+{
+  "name": "Appledaily By-pass",
+  "version": "1.0",
+  "description": "Browsing AppleDaily without subscription",
+  "content_scripts":[{
+    "matches": ["https://*.appledaily.com/*"],
+    "js": ["content.js"],
+    "run_at": "document_start"
+  }],
+  "permissions": [
+    "webRequest",
+    "*://*.appledaily.com/"
+  ],
+  "manifest_version": 2
+}
