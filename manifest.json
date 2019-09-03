@@ -3,7 +3,7 @@
   "version": "1.0",
   "description": "Browsing AppleDaily without subscription",
   "content_scripts":[{
-    "matches": ["*://*.appledaily.com/*"],
+    "matches": ["*://*.appledaily.com/*", "*://*.nextmedia.com/*"],
     "js": ["content.js"],
     "run_at": "document_start"
   }],
